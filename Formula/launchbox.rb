@@ -14,7 +14,7 @@ class Launchbox < Formula
     ENV["PATH"] = "#{ENV["PATH"]}:#{buildpath}/bin"
     (buildpath/"src/github.com/launchboxio/launchbox").install buildpath.children
     cd "src/github.com/launchboxio/launchbox" do
-      system "go", "build", "-o", bin/"launchbox", "."
+      system "go", "build", "-mod=mod", "-o", bin/"launchbox", "."
     end
   end
 
