@@ -1,5 +1,7 @@
 ## Launchbox Homebrew Tap
 
 ```
-$ brew install launchbox/brew/launchbox
+$ brew tap launchboxio/tap 
+$ brew install launchbox
+$ launchbox -v
 ```
